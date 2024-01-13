@@ -34,3 +34,6 @@ CURRENCY: USD
 RATE BUY: 37.85
 RATE SELL: 38.5996
 ```
+
+
+https://t.me/san4izess_monobankCurrencyBot
