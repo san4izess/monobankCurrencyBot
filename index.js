@@ -35,7 +35,7 @@ bot.hears(/^[A-Z]+$/i, async (ctx) => {
       return cur.currencyCodeA.toString() === currency.number;
     });
 
-    if (!foundCurrency || !foundCurrency.rateBuy || foundCurrency.rateSell) {
+    if (!foundCurrency || !foundCurrency.rateBuy || !foundCurrency.rateSell) {
       return ctx.reply(`Currency not found in MonoBank API`);
     }
 
