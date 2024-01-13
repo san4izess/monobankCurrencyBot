@@ -16,6 +16,12 @@ bot.help((ctx) => {
   );
 });
 
+bot.help((ctx) => {
+  ctx.reply(
+    "Type the currency code (e.g., USD, EUR) to get the latest exchange rates."
+  );
+});
+
 bot.hears(/^[A-Z]+$/i, async (ctx) => {
   const clientCurrencyCode = ctx.message.text;
   const currency = cc.code(clientCurrencyCode);
